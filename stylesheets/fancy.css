@@ -1,0 +1,178 @@
+/* line 5, ../sass/fancy.scss */
+.container {
+  width: 430px;
+  height: 180px;
+  border: 1px solid #CCC;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+/* line 14, ../sass/fancy.scss */
+.card {
+  float: left;
+  margin: 5px;
+  width: 200px;
+  height: 50px;
+  -webkit-perspective: 800;
+  -moz-perspective: 800;
+  -ms-perspective: 800;
+  -o-perspective: 800;
+  perspective: 800;
+}
+/* line 22, ../sass/fancy.scss */
+.card .front, .card .back {
+  display: block;
+  width: 198px;
+  padding: 15px 0px;
+  border: 1px solid #CCC;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.6s ease-in-out;
+  -moz-transition: 0.6s ease-in-out;
+  -o-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 41, ../sass/fancy.scss */
+.card .front {
+  background: #EEE;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  z-index: 9;
+}
+/* line 49, ../sass/fancy.scss */
+.card .back {
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+  -ms-transform: rotateX(-180deg);
+  -o-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+  z-index: 8;
+}
+/* line 54, ../sass/fancy.scss */
+.card #correct {
+  background: #01DF01;
+}
+/* line 58, ../sass/fancy.scss */
+.card #incorrect {
+  background: red;
+}
+/* line 64, ../sass/fancy.scss */
+.card.flipped .front {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  z-index: 9;
+}
+/* line 69, ../sass/fancy.scss */
+.card.flipped .back {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  z-index: 10;
+}
+
+/* line 78, ../sass/fancy.scss */
+.flashcontainer {
+  width: 430px;
+  height: 300px;
+  border: 1px solid #CCC;
+  margin: 0 auto 40px;
+  text-align: center;
+  background: blue;
+}
+
+/* line 87, ../sass/fancy.scss */
+.flashcard {
+  float: left;
+  margin: 5px;
+  -webkit-perspective: 800;
+  -moz-perspective: 800;
+  -ms-perspective: 800;
+  -o-perspective: 800;
+  perspective: 800;
+}
+/* line 93, ../sass/fancy.scss */
+.flashcard .front, .flashcard .back {
+  display: block;
+  width: 398px;
+  padding: 80px 0px;
+  border: 1px solid #CCC;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.6s ease-in-out;
+  -moz-transition: 0.6s ease-in-out;
+  -o-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 113, ../sass/fancy.scss */
+.flashcard .front {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  z-index: 9;
+}
+/* line 118, ../sass/fancy.scss */
+.flashcard .back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  z-index: 8;
+}
+/* line 125, ../sass/fancy.scss */
+.flashcard.flipped .front {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  z-index: 9;
+}
+/* line 130, ../sass/fancy.scss */
+.flashcard.flipped .back {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  z-index: 10;
+}

@@ -1,0 +1,88 @@
+@import "base";
+@import "compass";
+
+
+body
+{
+	background-color: #DDD;
+	background-image: url('../images/repeatable-linen.png');
+	font-family: 'Droid-Sans', sans-serif;
+    font-size: 14px;
+}
+
+.headerbar
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 40px;
+	width: 100%;
+	background: #000;
+	margin: 0;
+	z-index: 10;
+	color: #FFF;
+	padding:5px;
+	
+	.logo {
+		font-family: 'Lily Script One', serif;
+		font-size: 24px;
+		float:left;
+		padding:5px;
+	}
+	
+	.navigation {
+		float:right;
+	}
+}
+
+#searchbox
+{
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	margin-left: -210px;
+	width: 420px;
+	//background: #FFF;
+	//border: solid 1px #000;
+}
+
+
+#scroller {
+	
+	padding: 5px;
+	margin: 0px;
+	z-index: 50;
+	
+}
+
+#searchform {
+	z-index: 120;
+}
+
+.inspirations
+{
+	position: absolute;
+	top: 90%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	
+	.buffer
+	{
+		buffer: 20px;
+	}
+	
+	.card
+	{
+		float: left;
+		height: 300px;
+		width: 250px;
+		margin: 10px;
+		background: #FFF;
+		border: solid 1px #000;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+}
